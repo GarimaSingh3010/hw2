@@ -7,3 +7,10 @@ class CreateStudios < ActiveRecord::Migration[7.0]
     end
   end
 end
+
+studio.destroy_all
+
+new_studio= Studio.new
+new_studio["studio_id"]="1"
+new_studio["studio_name"]="Warner_Bros"
+new_studio.save

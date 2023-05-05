@@ -1,0 +1,2 @@
+class MovieCasting < ApplicationRecord
+end
