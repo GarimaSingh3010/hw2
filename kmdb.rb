@@ -78,7 +78,192 @@ movie_casting.destroy_all
 
 # Insert data into the database that reflects the sample data shown above.
 # Do not use hard-coded foreign key IDs.
-# TODO!
+Movie.destroy_all
+
+new_movie= Movie.new
+new_movie["title"]="Batman_Begins"
+new_movie["year_released"]="2005"
+new_movie["mpaa_rating"]="PG-13"
+new_movie["studio_id"]="1"
+new_movie.save
+      
+new_movie_2=Movie.new
+new_movie_2["title"]="The_Dark_Knight"
+new_movie_2["year_released"]="2008"
+new_movie_2["mpaa_rating"]="PG-13"
+new_movie_2["studio_id"]="1"
+new_movie_2.save
+      
+new_movie_3=Movie.new
+new_movie_3["title"]="The_Dark_Knight_Rises"
+new_movie_3["year_released"]="2012"
+new_movie_3["mpaa_rating"]="PG-13"
+new_movie_3["studio_id"]="1"     
+new_movie_3.save     
+
+studio.destroy_all
+
+new_studio= Studio.new
+new_studio["studio_id"]="1"
+new_studio["studio_name"]="Warner_Bros"
+new_studio.save
+
+actor.destroy_all
+
+new_actor=Actor.new
+new_actor["actor_id"]="1"
+new_actor["actor_name"]="Christian_Bale"
+new_actor.save
+
+new_actor_2=Actor.new
+new_actor_2["actor_id"]="2"
+new_actor_2["actor_name"]="Michael_Caine"
+new_actor_2.save
+
+new_actor_3=Actor.new
+new_actor_3["actor_id"]="3"
+new_actor_3["actor_name"]="Liam_Neeson"
+new_actor_3.save
+
+new_actor_4=Actor.new
+new_actor_4["actor_id"]="4"
+new_actor_4["actor_name"]="Katie_Holmes"
+new_actor_4.save
+
+new_actor_5=Actor.new
+new_actor_5["actor_id"]="5"
+new_actor_5["actor_name"]="Gary_Oldman"
+new_actor_5.save
+
+new_actor_6=Actor.new
+new_actor_6["actor_id"]="6"
+new_actor_6["actor_name"]="Heath_Ledger"
+new_actor_6.save
+
+new_actor_7=Actor.new
+new_actor_7["actor_id"]="7"
+new_actor_7["actor_name"]="Aaron_Eckhart"
+new_actor_7.save
+
+new_actor_8=Actor.new
+new_actor_8["actor_id"]="8"
+new_actor_8["actor_name"]="Maggie_Gyllanhaal"
+new_actor_8.save
+
+new_actor_9=Actor.new
+new_actor_9["actor_id"]="9"
+new_actor_9["actor_name"]="Tom_Hardy"
+new_actor_9.save
+
+new_actor_10=Actor.new
+new_actor_10["actor_id"]="10"
+new_actor_10["actor_name"]="Tom_Hardy"
+new_actor_10.save
+
+new_actor_11=Actor.new
+new_actor_11["actor_id"]="11"
+new_actor_11["actor_name"]="Joseph Gordon-Levitt"
+new_actor_11.save
+
+new_actor_12=Actor.new
+new_actor_12["actor_id"]="12"
+new_actor_12["actor_name"]="Anne Hathaway"
+new_actor_12.save
+
+movie_casting.destroy_all
+
+new_movie_casting=Movie_casting.new
+new_movie_casting["movie_id"]="1"
+new_movie_casting["actor_id"]="1"
+new_movie_casting["character_name"]="Bruce Wayne"
+new_movie_casting.save
+
+new_movie_casting_2=Movie_casting.new
+new_movie_casting_2["movie_id"]="1"
+new_movie_casting_2["actor_id"]="2"
+new_movie_casting_2["character_name"]="Alfred"
+new_movie_casting_2.save
+
+new_movie_casting_3=Movie_casting.new
+new_movie_casting_3["movie_id"]="1"
+new_movie_casting_3["actor_id"]="3"
+new_movie_casting_3["character_name"]="Ra's Al Ghul"
+new_movie_casting_3.save
+
+new_movie_casting_4=Movie_casting.new
+new_movie_casting_4["movie_id"]="1"
+new_movie_casting_4["actor_id"]="4"
+new_movie_casting_4["character_name"]="Rachel Dawes"
+new_movie_casting_4.save
+
+new_movie_casting_5=Movie_casting.new
+new_movie_casting_5["movie_id"]="1"
+new_movie_casting_5["actor_id"]="5"
+new_movie_casting_5["character_name"]="Commissioner Gordon"
+new_movie_casting_5.save
+
+new_movie_casting_6=Movie_casting.new
+new_movie_casting_6["movie_id"]="2"
+new_movie_casting_6["actor_id"]="1"
+new_movie_casting_6["character_name"]="Bruce Wayne"
+new_movie_casting_6.save
+
+new_movie_casting_7=Movie_casting.new
+new_movie_casting_7["movie_id"]="2"
+new_movie_casting_7["actor_id"]="6"
+new_movie_casting_7["character_name"]="Joker"
+new_movie_casting_7.save
+
+new_movie_casting_8=Movie_casting.new
+new_movie_casting_8["movie_id"]="2"
+new_movie_casting_8["actor_id"]="7"
+new_movie_casting_8["character_name"]="Harvey Dent"
+new_movie_casting_8.save
+
+new_movie_casting_9=Movie_casting.new
+new_movie_casting_9["movie_id"]="2"
+new_movie_casting_9["actor_id"]="2"
+new_movie_casting_9["character_name"]="Alfred"
+new_movie_casting_9.save
+
+new_movie_casting_10=Movie_casting.new
+new_movie_casting_10["movie_id"]="2"
+new_movie_casting_10["actor_id"]="8"
+new_movie_casting_10["character_name"]="Rachel Dawes"
+new_movie_casting_10.save
+
+new_movie_casting_11=Movie_casting.new
+new_movie_casting_11["movie_id"]="3"
+new_movie_casting_11["actor_id"]="1"
+new_movie_casting_11["character_name"]="Bruce Wayne"
+new_movie_casting_11.save
+
+new_movie_casting_12=Movie_casting.new
+new_movie_casting_12["movie_id"]="3"
+new_movie_casting_12["actor_id"]="5"
+new_movie_casting_12["character_name"]="Commissioner Gordon"
+new_movie_casting_12.save
+
+new_movie_casting_13=Movie_casting.new
+new_movie_casting_13["movie_id"]="3"
+new_movie_casting_13["actor_id"]="9"
+new_movie_casting_13["character_name"]="Bane"
+new_movie_casting_13.save
+
+new_movie_casting_14=Movie_casting.new
+new_movie_casting_14["movie_id"]="3"
+new_movie_casting_14["actor_id"]="10"
+new_movie_casting_14["character_name"]="John Blake"
+new_movie_casting_14.save
+
+new_movie_casting_15=Movie_casting.new
+new_movie_casting_15["movie_id"]="3"
+new_movie_casting_15["actor_id"]="11"
+new_movie_casting_15["character_name"]="Selina Kyle"
+new_movie_casting_15.save
+
+
+
 
 # Prints a header for the movies output
 #puts "Movies"
@@ -87,6 +272,16 @@ movie_casting.destroy_all
 
 # Query the movies data and loop through the results to display the movies output.
 # TODO!
+movies=Movie.all
+
+for movie in movies
+    mtitle = movie["title"]
+    year = movie["year_released"]
+    mrating = movie["mpaa_rating"]
+    stu = Studio.find_by({"id" => movie["studio_id"]})["title"]
+    puts "#{mtitle} #{year} #{mrating} #{stu}"
+end
+
 
 # Prints a header for the cast output
 #puts ""
@@ -96,3 +291,13 @@ movie_casting.destroy_all
 
 # Query the cast data and loop through the results to display the cast output for each movie.
 # TODO!
+
+actor = Actor.all
+movie_casting = Movie_casting.all
+
+for  in roles
+    ro = role["character_name"]
+    movie_name = Movie.find_by({"id" => role["movie_id"]})["title"]
+    actor_name = Actor.find_by({"id" => role["actor_id"]})["name"]
+    puts "#{movie_name} #{actor_name} #{role_name}"
+end
